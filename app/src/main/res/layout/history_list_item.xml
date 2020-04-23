@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/text_list_number"
+        android:text="01"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_protocol_start_time"
+        android:text="오후 5시 50분"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_protocol_name_history_list"
+        android:text="매우낮은강도 Ver.4"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_progress_history_list"
+        android:text="100%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_survey_speed"
+        android:src="@drawable/img_survey_circle_green"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_survey_incline"
+        android:src="@drawable/img_survey_circle_green"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_survey_zone"
+        android:src="@drawable/img_survey_circle_green"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="red">#ff6666</color>
+    <color name="dred">#9f2626</color>
+    <color name="red_tr">#aaec3434</color>
+    <color name="green">#85e085</color>
+    <color name='dgreen'>#4dbf4d</color>
+    <color name='green_matrix'>#00ff00</color>
+    <color name='dgreen_tr'>#aa4dbf4d</color>
+    <color name='ltgray'>#cccccc</color>
+    <color name='ltltgray'>#afafaf</color>
+    <color name='mdgray'>#807f7f</color>
+    <color name='darkgray'>#252525</color>
+    <color name='toast_color'>#FF616161</color>
+    <color name='black'>#000000</color>
+    <color name='white'>#ffffff</color>
+    <color name="yellow">#ffff00</color>
+
+    <color name="white_opacity">#7fffffff</color>
+    <color name="events_view">#ffe100</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name='md_gray_sep'>#888ea1</color>
+
+    <color name="dark_blue_gray">#121e43</color>
+    <color name="dark_blue_gray_op">#7f121e43</color>
+    <color name="dark_blue_gray_op2">#1a121e43</color>
+    <color name="color_heart_block">#3997d9</color>
+    <color name="text_color_primary">#ffffff</color>
+    <color name="window_bg">#358dd9</color>
+    <color name="nav_bar_color">#358dd9</color>
+</resources>

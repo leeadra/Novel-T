@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="NovelT"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_time_signup"
+            android:textColor="@color/white"
+            android:text="2019. 02. 12 2:12"
+            android:textSize="30sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/text_user_name_signup"
+            android:text="이름"
+            android:background="@drawable/background_signup_text1"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_user_name_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:hint="홍길동"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="4"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:nextFocusUp="@id/edit_phone_number_signup"
+            android:nextFocusDown="@id/edit_phone_number_signup"
+            android:nextFocusForward="@id/edit_phone_number_signup"
+            android:nextFocusLeft="@id/edit_phone_number_signup"
+            android:nextFocusRight="@id/edit_phone_number_signup"
+            android:layout_toRightOf="@id/text_user_name_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_gender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/edit_user_name_signup"
+            android:layout_alignTop="@id/edit_user_name_signup"
+            android:layout_alignBottom="@id/edit_user_name_signup"
+            android:gravity="center"
+            android:layout_alignLeft="@id/text_birth_signup"
+            android:layout_alignRight="@id/edit_birth_signup">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:text="남"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:buttonTint="@color/mdgray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:text="여"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:buttonTint="@color/mdgray"
+                android:layout_marginLeft="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_hp_signup"
+            android:text="H.P"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_toLeftOf="@id/edit_phone_number_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_phone_number_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="number"
+            android:hint="01012345678"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_pw_signup"
+            android:text="PW"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_pw_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:inputType="numberPassword"
+            android:hint="숫자 6자리"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/text_pw_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_pw_correctness_signup"
+            android:src="@drawable/img_incorrect"
+            android:layout_toRightOf="@id/edit_pw_signup"
+            android:layout_alignTop="@id/edit_pw_signup"
+            android:layout_marginLeft="15dp"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_birth_signup"
+            android:text="생년월일"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/edit_pw_signup"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_birth_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="30sp"
+            android:hint="19881117"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_toRightOf="@id/text_birth_signup"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_height_signup"
+            android:text="키(cm)"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/edit_birth_signup"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/background_signup_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_height_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:maxLength="5"
+            android:hint="170.0"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/text_height_signup"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_increase_height_signup"
+            android:background="@drawable/btn_increase_signup"
+            android:layout_alignTop="@id/edit_height_signup"
+            android:layout_toRightOf="@id/edit_height_signup"
+            android:layout_alignBottom="@id/edit_height_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_decrease_height_signup"
+            android:background="@drawable/btn_decrease_signup"
+            android:layout_alignTop="@id/edit_height_signup"
+            android:layout_toRightOf="@id/btn_increase_height_signup"
+            android:layout_alignBottom="@id/edit_height_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/text_weight_signup"
+            android:text="몸무게(kg)"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_weight_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:maxLength="5"
+            android:gravity="center"
+            android:hint="60.0"
+            android:layout_toRightOf="@id/text_weight_signup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_increase_weight_signup"
+            android:background="@drawable/btn_increase_signup"
+            android:layout_alignTop="@id/edit_weight_signup"
+            android:layout_toRightOf="@id/edit_weight_signup"
+            android:layout_alignBottom="@id/edit_weight_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_decrease_weight_signup"
+            android:background="@drawable/btn_decrease_signup"
+            android:layout_alignTop="@id/edit_weight_signup"
+            android:layout_toRightOf="@id/btn_increase_weight_signup"
+            android:layout_alignBottom="@id/edit_weight_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_max_bp_signup"
+            android:text="최대혈압"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_toRightOf="@id/btn_decrease_weight_signup"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_max_bp_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:hint="120"
+            android:singleLine="true"
+            android:maxLength="3"
+            android:layout_toRightOf="@id/text_max_bp_signup"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_increase_max_bp_signup"
+            android:background="@drawable/btn_increase_signup"
+            android:layout_alignTop="@id/edit_max_bp_signup"
+            android:layout_toRightOf="@id/edit_max_bp_signup"
+            android:layout_alignBottom="@id/edit_max_bp_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_decrease_max_bp_signup"
+            android:background="@drawable/btn_decrease_signup"
+            android:layout_alignTop="@id/edit_max_bp_signup"
+            android:layout_toRightOf="@id/btn_increase_max_bp_signup"
+            android:layout_alignBottom="@id/edit_max_bp_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_min_bp_signup"
+            android:text="최저혈압"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_toRightOf="@id/btn_decrease_max_bp_signup"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_min_bp_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:hint="80"
+            android:singleLine="true"
+            android:maxLength="3"
+            android:layout_toRightOf="@id/text_min_bp_signup"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_increase_min_bp_signup"
+            android:background="@drawable/btn_increase_signup"
+            android:layout_alignTop="@id/edit_min_bp_signup"
+            android:layout_toRightOf="@id/edit_min_bp_signup"
+            android:layout_alignBottom="@id/edit_min_bp_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_decrease_min_bp_signup"
+            android:background="@drawable/btn_decrease_signup"
+            android:layout_alignTop="@id/edit_min_bp_signup"
+            android:layout_toRightOf="@id/btn_increase_min_bp_signup"
+            android:layout_alignBottom="@id/edit_min_bp_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/notice_signup"
+            android:textColor="#ffff00"
+            android:textSize="20sp"
+            android:layout_alignStart="@id/text_max_bp_signup"
+            android:layout_alignRight="@id/btn_decrease_min_bp_signup"
+            android:layout_below="@id/edit_max_bp_signup"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_fatness_signup"
+            android:text="체지방률"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_fatness_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:hint="25.0"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/text_fatness_signup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_increase_fatness_signup"
+            android:background="@drawable/btn_increase_signup"
+            android:layout_alignTop="@id/edit_fatness_signup"
+            android:layout_toRightOf="@id/edit_fatness_signup"
+            android:layout_alignBottom="@id/edit_fatness_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_decrease_fatness_signup"
+            android:background="@drawable/btn_decrease_signup"
+            android:layout_alignTop="@id/edit_fatness_signup"
+            android:layout_toRightOf="@id/btn_increase_fatness_signup"
+            android:layout_alignBottom="@id/edit_fatness_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_area_signup"
+            android:text="지역"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@id/text_max_bp_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner_area_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/text_area_signup"
+            android:layout_alignParentBottom="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_place_signup"
+            android:text="지점"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/background_signup_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/spinner_area_signup"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner_place_signup"
+            android:background="@drawable/background_signup_edit1"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/text_place_signup"
+            android:layout_alignRight="@id/btn_decrease_min_bp_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/privacy_agreement"
+            android:text="개인정보 수집 및 이용 동의"
+            android:textColor="@color/black"
+            android:background="@drawable/round_rectangle"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:background="@drawable/btn_signup"
+            android:text="등록"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Copyright 2019. Hanyang Digitech all rights reserved."
+            android:textColor="#ffff00"
+            android:textSize="13sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <TextView
+            android:text="NovelT"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_time_self_control_result"
+            android:textColor="@color/white"
+            android:text="2019. 02. 12. PM 2:12"
+            android:textSize="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="ID :"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_userid_self_control_result"
+                    android:text="jaehyeok"
+                    android:textSize="27sp"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="BAND :"
+                    android:textColor="#bebebe"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_patch_self_control_result"
+                    android:text="9150"
+                    android:textColor="#bebebe"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/indicator_connection_self_control_result"
+                    android:src="@drawable/img_connect"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/indicator_battery_self_control_result"
+                    android:src="@drawable/battery_indicator_50p"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="-70dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_protocol_name_self_control_result"
+                android:text="Self Control"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp">
+
+                <Button
+                    android:id="@+id/btn_out_self_control_result"
+                    android:text="나가기"
+                    android:textColor="#bebebe"
+                    android:textSize="20sp"
+                    android:background="@drawable/btn_out"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background_content_mile_test">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:text="Max Speed"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/text_max_speed_self_control_result"
+                    android:background="@drawable/background_textview"
+                    android:text="10.4 km/h"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="Time"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/text_elapsed_time_self_control_result"
+                    android:text="10 : 15"
+                    android:background="@drawable/background_textview"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:text="Max Incline"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/text_max_incline_self_control_result"
+                    android:background="@drawable/background_textview"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="Distance"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/text_distance_self_control_result"
+                    android:text="1.05 km"
+                    android:background="@drawable/background_textview"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:text="Max HR"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/text_max_hr_self_control_result"
+                    android:background="@drawable/background_textview"
+                    android:text="100 bpm"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="Calorie"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/text_calorie_self_control_result"
+                    android:text="100 kcal"
+                    android:background="@drawable/background_textview"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_hr_graph">
+
+        <TextView
+            android:id="@+id/text_hrgraph_self_control_result"
+            android:text="Heart Rate Graph (bpm)"
+            android:textColor="#bebebe"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.exam.novelt3_1.Custom_HRZoneGraph
+            android:id="@+id/HRGraph_self_control_result"
+            android:layout_below="@id/text_hrgraph_self_control_result"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_notice_band_self_control_result"
+            android:text="Novel T 밴드를 착용해 주세요~"
+            android:textColor="#ffff00"
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Copyright 2019. Hanyang Digitech all rights reserved."
+        android:textColor="#ffff00"
+        android:textSize="13sp"
+        android:gravity="end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+void polyfit2(float* data, int num_data, float* fitted);

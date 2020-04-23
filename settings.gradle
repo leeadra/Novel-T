@@ -1,0 +1,1 @@
+include ':app', ':hpatch', 'hpatchalgo', 'hpatchalgorithm', 'hpatchdata', 'hpatchdevice', 'hpatchhost', 'PhysicaloidLibrary'

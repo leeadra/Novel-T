@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <TextView
+            android:text="NovelT"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_time_mile_result"
+            android:textColor="@color/white"
+            android:text="2019. 02. 12. PM 2:12"
+            android:textSize="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="ID :"
+                    android:textColor="#bebebe"
+                    android:textSize="25sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_userid_mile_result"
+                    android:text="jaehyeok"
+                    android:textSize="27sp"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="BAND :"
+                    android:textColor="#bebebe"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_patch_mile_result"
+                    android:text="9150"
+                    android:textColor="#bebebe"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/indicator_connection_mile_result"
+                    android:src="@drawable/img_connect"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/indicator_battery_mile_result"
+                    android:src="@drawable/battery_indicator_50p"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="-70dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Protocol :"
+                android:textColor="#bebebe"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="개인맞춤 체력검사"
+                android:textColor="@color/white"
+                android:textSize="33sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_out_mile_result"
+                android:text="나가기"
+                android:textColor="#bebebe"
+                android:textSize="20sp"
+                android:background="@drawable/btn_out"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background_content_mile_test">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="Distance"
+                            android:textColor="#bebebe"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ProgressBar
+                            android:id="@+id/mile_result_progressbar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="0"
+                            android:layout_centerInParent="true"
+                            android:progressDrawable="@drawable/circular_progress"
+                            android:secondaryProgress="100"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/text_progress_mile_result"
+                            android:textColor="@color/white"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:layout_alignLeft="@id/mile_result_progressbar"
+                            android:layout_alignRight="@id/mile_result_progressbar"
+                            android:layout_alignTop="@id/mile_result_progressbar"
+                            android:layout_alignBottom="@id/mile_result_progressbar"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Heart Rate"
+                            android:textColor="#bebebe"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/chart_hr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/text_hr_max_mile_result"
+                                android:text="000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="62dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/text_hr_avg_mile_result"
+                                android:text="000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="@string/speed"
+                            android:textColor="#bebebe"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/chart_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_speed_max_mile_result"
+                                android:text="000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="62dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/text_speed_avg_mile_result"
+                                android:text="000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="@string/vo2max"
+                            android:textColor="#bebebe"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/chart_vo2max"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_vo2max_user_mile_result"
+                                android:text="000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="62dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/text_vo2max_others_mile_result"
+                                android:text="31.4"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginRight="37dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:text="Time"
+                        android:textColor="#bebebe"
+                        android:textSize="30sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_time_mileresult"
+                        android:background="@drawable/background_textview"
+                        android:text="00:00"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Calorie"
+                        android:textColor="#bebebe"
+                        android:textSize="30sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_calorie_mileresult"
+                        android:background="@drawable/background_textview"
+                        android:text="0 kcal"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:id="@+id/text_cfi_score"
+                    android:text="CFI Score"
+                    android:textColor="#bebebe"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_cfi"
+                    android:src="@drawable/img_cfi"
+                    android:layout_below="@id/text_cfi_score"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_cfi"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:layout_alignTop="@id/img_cfi"
+                    android:layout_alignBottom="@id/img_cfi"
+                    android:layout_alignLeft="@id/img_cfi"
+                    android:layout_alignRight="@id/img_cfi"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/text_cfi_intro"
+                    android:text="@string/cfi_intro"
+                    android:textColor="#bebebe"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_hr_graph"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_tab_hr_graph"
+                android:background="@drawable/btn_tab"
+                android:text="Heart Rate Graph (bpm)"
+                android:textColor="#bebebe"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--<TextView
+                android:id="@+id/text_tab_normal_distribution"
+                android:background="@drawable/btn_tab"
+                android:text="Normal Distribution"
+                android:textColor="#bebebe"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/tab_framelayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.exam.novelt3_1.OneMile_HRZoneGraph
+                android:id="@+id/HRGraph_mile_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Copyright 2019. Hanyang Digitech all rights reserved."
+        android:textColor="#ffff00"
+        android:textSize="13sp"
+        android:gravity="end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

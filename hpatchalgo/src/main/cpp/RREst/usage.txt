@@ -1,0 +1,43 @@
+secStep = 3;    // 3 sec
+secWin = 32;    // 32 sec
+int idxCrop[2];
+
+	// Test Data loading
+	fp1 = fopen("../RREst/RPA_t.bin", "rb");
+	fread(RPA_t, sizeof(float), 814, fp1);
+	fclose(fp1);
+
+	fp2 = fopen("../RREst/RPA_v.bin", "rb");
+	fread(RPA_v, sizeof(float), 814, fp2);
+	fclose(fp2);
+
+	fp3 = fopen("../RREST/RSA.bin", "rb");
+	fread(RSA_idx, sizeof(float), 814, fp2);
+	fclose(fp3);
+
+	for (i = 0; i < N; i++) {
+
+		sTime = i * secStep;
+		eTime = i * secStep + secWin;
+		
+		// Input RPA data (time, value)
+		rangeFinder(RPA_t, 814, currIdx, sTime, eTime, idxCrop, Init);
+
+		cropDatafloat(RPA_t, idxCrop[0], idxCrop[1], CroppedRPA_t);
+		cropDatafloat(RPA_v, idxCrop[0], idxCrop[1], CroppedRPA_v);
+
+		numDataWin = idxCrop[1] - idxCrop[0] + 1;
+
+		for (cnt = 0; cnt < numDataWin; cnt++) {
+			CroppedRPA_t[cnt] = CroppedRPA_t[cnt] - (float)sTime;
+		}
+
+		// Input RSA data (indices)
+		rangeFinder(RSA_t, 814, currIdx, sTime, eTime, idxCrop, Init);
+
+		cropDataint(RSA_idx, sTime, FS, idxCrop[0], idxCrop[1], CroppedRSA);
+		
+		numDataWin = idxCrop[1] - idxCrop[0] + 1;
+		
+		BrPM = rrEst(RSA_idx,  CroppedRPA_v, numDataWin, secWin);		
+	}	

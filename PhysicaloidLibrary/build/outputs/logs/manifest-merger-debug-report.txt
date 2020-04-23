@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:1-8:12
+	package
+		ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:2:5-30
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:4:5-30
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:3:5-28
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+uses-sdk
+ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:5-47
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:5-47
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:5-47
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:5-47
+INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:5-47
+	android:targetSdkVersion
+		ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:15-44
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml
+		ADDED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml:6:5-47
+		INJECTED from D:\AndroidStudio_Projects\NovelT3.1\PhysicaloidLibrary\AndroidManifest.xml

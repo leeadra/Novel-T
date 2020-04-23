@@ -1,0 +1,1 @@
+void ecg_freq_hrv_proc(int reset, float* rri, int data_size, float* a_vlf, float* a_lf, float* a_hf);

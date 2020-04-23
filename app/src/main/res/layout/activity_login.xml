@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background">
+
+    <TextView
+        android:text="NovelT"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_time_login"
+        android:textColor="@color/white"
+        android:text="2019. 02. 12 PM 2:12"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_login_background"
+        android:background="@drawable/background_login"
+        android:layout_centerInParent="true"
+        android:layout_width="950dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:background="@drawable/background_login_id_typing"
+        android:textSize="45sp"
+        android:hint="01012341234"
+        android:layout_alignStart="@id/img_login_background"
+        android:gravity="center|end"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="11"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@id/edit_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textview_id"
+        android:text="H.P"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:background="@drawable/background_login_id"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/edit_id"
+        android:layout_marginLeft="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_pw"
+        android:background="@drawable/background_login_id_typing"
+        android:textSize="45sp"
+        android:hint="숫자 6자리"
+        android:layout_alignStart="@id/img_login_background"
+        android:gravity="right|center_vertical"
+        android:layout_marginLeft="500dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:imeOptions="actionDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textview_pw"
+        android:text="PW"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:background="@drawable/background_login_id"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/edit_pw"
+        android:layout_marginLeft="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_registration"
+        android:background="@drawable/background_login_button"
+        android:text="회원등록"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_alignRight="@id/edit_id"
+        android:layout_alignBottom="@id/img_login_background"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:background="@drawable/background_login_button"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_alignStart="@id/btn_registration"
+        android:layout_alignBottom="@id/img_login_background"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress_login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="Copyright 2019. Hanyang Digitech all rights reserved."
+        android:textColor="#ffff00"
+        android:textSize="13sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
